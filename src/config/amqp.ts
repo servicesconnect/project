@@ -2,7 +2,7 @@ import { envConfig, winstonLogger } from "@project/config";
 import client, { Channel, Connection } from "amqplib";
 import { Logger } from "winston";
 
-const log: Logger = winstonLogger("usersQueueConnection", "debug");
+const log: Logger = winstonLogger("projectQueueConnection", "debug");
 
 async function createQueueConnection(): Promise<Channel | undefined> {
   try {

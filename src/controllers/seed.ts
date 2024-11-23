@@ -7,7 +7,7 @@ const project = async (req: Request, res: Response): Promise<void> => {
   const { count } = req.params;
   await publishDirectMessage(
     projectChannel,
-    "jobber-project",
+    "servicesconnect-project",
     "get-sellers",
     JSON.stringify({ type: "getSellers", count }),
     "Project seed message sent to user service."
